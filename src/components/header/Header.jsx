@@ -11,7 +11,7 @@ const Header = () => {
         </Link>
 
       <Lien>
-        <Link to="/histoire" style={{ textDecoration: "none" }}>
+        <Link to="/marque" style={{ textDecoration: "none" }}>
           <Button>Marques</Button>
         </Link>
         <Link to="/histoire" style={{ textDecoration: "none" }}>
