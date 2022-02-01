@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-
+import { useEffect } from "react";
 
 
 const Marques = () => {
+
+  const [marques, setMarques] = useState({})
+
+  useEffect(() => {
+    fetch("http://localhost:5001/api/marques")
+      .then((response) => response.json())
+      .then((result) => setMarques(result));
+  }, []);
+
+  const marque = marques.map((e) => ({
+    idMarques: e.id,
+    name: e.name
+  }))
+
+
+
   return (
     <Marque>
       <Header>
         <Button>Ajouter une marque</Button>
-        <h3>Marques</h3>
+        {marque}
       </Header>
       <Aficher>
           <h3>Audi</h3>
