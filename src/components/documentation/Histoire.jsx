@@ -6,7 +6,7 @@ const Histoire = () => {
     <History>
         <His>
 
-      <h1>Hitoire de l'automobile</h1>
+      <h1>Histoire de l'automobile</h1>
       <p>
         Le mot automobile signifie « qui se meut par soi-même », c'est-à-dire, à
         l'origine.
