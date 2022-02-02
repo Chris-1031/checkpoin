@@ -14,8 +14,8 @@ const Header = () => {
         <Link to="/marque" style={{ textDecoration: "none" }}>
           <Button>Marques</Button>
         </Link>
-        <Link to="/histoire" style={{ textDecoration: "none" }}>
-          <Button>Decouvrir</Button>
+        <Link to="/modelRoute" style={{ textDecoration: "none" }}>
+          <Button>Models</Button>
         </Link>
         <Link to="/histoire" style={{ textDecoration: "none" }}>
           <Button>Decouvrir</Button>
