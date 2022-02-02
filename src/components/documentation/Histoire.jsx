@@ -5,7 +5,9 @@ const Histoire = () => {
   return (
     <History>
         <His>
-
+<br />
+<br />
+<br />
       <h1>Histoire de l'automobile</h1>
       <p>
         Le mot automobile signifie « qui se meut par soi-même », c'est-à-dire, à
@@ -82,6 +84,10 @@ const Histoire = () => {
           camions à vapeur ont été produits jusqu'à la moitié du XXe siècle,
           principalement en Angleterre.
         </p>
+        <br />
+        <br />
+        <br />
+
       </Vapeur>
     </History>
   );
@@ -92,6 +98,7 @@ export default Histoire;
 const History = styled.div`
   background-color: grey;
   margin-top: -1.5rem;
+  
 
   hr {
     width: 30%;
