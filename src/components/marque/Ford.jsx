@@ -15,12 +15,14 @@ const Ford = () => {
   return (
     <Marque>
       <Ul>
+        <Link to="/gt" style={{ textDecoration: "none" }}>
         <Li>
           {ford.name} <img src={ford.link} alt="" />
           moteur: {ford.moteur}
           <br />
           chevaux: {ford.chevaux}
         </Li>
+        </Link>
       </Ul>
     </Marque>
   );
@@ -30,7 +32,7 @@ export default Ford;
 
 const Marque = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   font-size: 2rem;
   color: red;
   display: flex;
@@ -62,7 +64,7 @@ const Li = styled.li`
     color: red;
   }
   img {
-    width: 70rem;
-    height: 40rem;
+    width: 50rem;
+    height: 30rem;
   }
 `;

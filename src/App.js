@@ -16,6 +16,17 @@ import Dodge from "./components/marque/Dodge";
 import Aston from "./components/marque/Aston";
 import Bugatti from "./components/marque/Bugatti";
 import ModelRoute from "./components/model/ModelRoute";
+import Raudi from "./components/model/Raudi";
+import Brabus from "./components/model/Brabus";
+import Turbo from "./components/model/Turbo";
+import Strandale from "./components/model/Strandale";
+import M from "./components/model/M"
+import Gt from "./components/model/Gt";
+import Wraith from "./components/model/Wraith";
+import Urus from "./components/model/Urus";
+import Chal from "./components/model/Chal";
+import Dbs from "./components/model/Dbs";
+import Chiron from "./components/model/Chiron";
 
 function App() {
   return (
@@ -38,6 +49,17 @@ function App() {
           <Route path="/aston" element={<Aston />} />
           <Route path="/bugatti" element={<Bugatti />} />
           <Route path="/modelRoute" element={<ModelRoute />} />
+          <Route path="/raudi" element={<Raudi />} />
+          <Route path="/brabus" element={<Brabus />} />
+          <Route path="/turbo" element={<Turbo />} />
+          <Route path="/strandale" element={<Strandale />} />
+          <Route path="/m" element={<M />} />
+          <Route path="/gt" element={<Gt />} />
+          <Route path="/wraith" element={<Wraith />} />
+          <Route path="/urus" element={<Urus />} />
+          <Route path="/challenger" element={<Chal />} />
+          <Route path="/dbs" element={<Dbs />} />
+          <Route path="/chiron" element={<Chiron />} />
           
           
         </Routes>

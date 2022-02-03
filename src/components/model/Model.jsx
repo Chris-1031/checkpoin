@@ -1,25 +1,31 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 const Model = () => {
   const [model, setModel] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5001/api/models/1?marque=1`)
+    fetch(`http://localhost:5001/api/models/1`)
       .then((res) => res.json())
       .then((model) => setModel(model))
       .catch((err) => console.log(err));
   }, []);
   return (
     <Models>
-      <Ul>
-        <Li>
-          {model.name} <img src={model.link} alt="" />
-          moteur:{model.moteur}
-          <br />
-          chevaux:{model.chevaux}
-        </Li>
-      </Ul>
+      
+        <Ul>
+        <Link to="/raudi" style={{ textDecoration: "none" }}>
+          <Li>
+            {model.name} <img src={model.link} alt="" />
+            moteur:{model.moteur}
+            <br />
+            chevaux:{model.chevaux}
+          </Li>
+          </Link>
+        </Ul>
+      
     </Models>
   );
 };
@@ -60,7 +66,8 @@ const Li = styled.li`
     color: red;
   }
   img {
-    width: 70rem;
-    height: 40rem;
+    width: 50rem;
+    height: 30rem;
   }
 `;
+

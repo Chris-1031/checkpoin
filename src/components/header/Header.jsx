@@ -18,7 +18,7 @@ const Header = () => {
           <Button>Models</Button>
         </Link>
         <Link to="/histoire" style={{ textDecoration: "none" }}>
-          <Button>Decouvrir</Button>
+          <Button>Histoire</Button>
         </Link>
       </Lien>
     </Headers>
