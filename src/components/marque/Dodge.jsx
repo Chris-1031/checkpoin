@@ -15,12 +15,14 @@ const Dodge = () => {
   return (
     <Marque>
       <Ul>
+      <Link to="/challenger" style={{ textDecoration: "none" }}>
         <Li>
           {dodge.name} <img src={dodge.link} alt="" />
           moteur: {dodge.moteur}
           <br />
           chevaux: {dodge.chevaux}
         </Li>
+        </Link>
       </Ul>
     </Marque>
   );
@@ -30,7 +32,7 @@ export default Dodge;
 
 const Marque = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   font-size: 2rem;
   color: red;
   display: flex;
@@ -62,7 +64,7 @@ const Li = styled.li`
     color: red;
   }
   img {
-    width: 70rem;
-    height: 40rem;
+    width: 50rem;
+    height: 30rem;
   }
 `;

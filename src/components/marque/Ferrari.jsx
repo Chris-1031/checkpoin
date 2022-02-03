@@ -15,12 +15,15 @@ const Ferrari = () => {
   return (
     <Marque>
       <Ul>
+        <Link to="/strandale" style={{ textDecoration: "none" }}>
+
         <Li>
           {ferrari.name} <img src={ferrari.link} alt="" />
           moteur: {ferrari.moteur}
           <br />
           chevaux: {ferrari.chevaux}
         </Li>
+        </Link>
       </Ul>
     </Marque>
   );
@@ -30,7 +33,7 @@ export default Ferrari;
 
 const Marque = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   font-size: 2rem;
   color: red;
   display: flex;
@@ -62,7 +65,7 @@ const Li = styled.li`
     color: red;
   }
   img {
-    width: 70rem;
-    height: 40rem;
+    width: 50rem;
+    height: 30rem;
   }
 `;

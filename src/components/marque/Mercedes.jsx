@@ -15,12 +15,15 @@ const Mercedes = () => {
   return (
     <Marque>
       <Ul>
+        <Link to="/brabus"  style={{ textDecoration: "none" }}>
+
         <Li>
           {mercedes.name} <img src={mercedes.link} alt="" />
           moteur: {mercedes.moteur}
           <br />
           chevaux: {mercedes.chevaux}
         </Li>
+        </Link>
       </Ul>
     </Marque>
   );
@@ -30,7 +33,7 @@ export default Mercedes;
 
 const Marque = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   font-size: 2rem;
   color: red;
   display: flex;
@@ -62,7 +65,7 @@ const Li = styled.li`
     color: red;
   }
   img {
-    width: 70rem;
-    height: 40rem;
+    width: 50rem;
+    height: 30rem;
   }
 `;

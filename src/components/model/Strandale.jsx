@@ -1,36 +1,41 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Bmw = () => {
-  const [bmw, setBmw] = useState([]);
+const Strandale = () => {
+  const [strandale, setStrandale] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5001/api/models/5")
+    fetch(`http://localhost:5001/api/models/4`)
       .then((res) => res.json())
-      .then((data) => setBmw(data))
+      .then((strandale) => setStrandale(strandale))
       .catch((err) => console.log(err));
   }, []);
-
   return (
-    <Marque>
+    <Models>
       <Ul>
-        <Link to="/m" style={{ textDecoration: "none" }}>
         <Li>
-          {bmw.name} <img src={bmw.link} alt="" />
-          moteur: {bmw.moteur}
+          {strandale.name}
+          <iframe
+            width="900"
+            height="550"
+            src="https://www.youtube.com/embed/oeZVfWLKtqQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          moteur:{strandale.moteur}
           <br />
-          chevaux: {bmw.chevaux}
+          chevaux:{strandale.chevaux}
         </Li>
-        </Link>
       </Ul>
-    </Marque>
+    </Models>
   );
 };
 
-export default Bmw;
+export default Strandale;
 
-const Marque = styled.div`
+const Models = styled.div`
   width: 100%;
   height: 100vh;
   font-size: 2rem;
@@ -45,14 +50,15 @@ const Ul = styled.ul`
   list-style-type: none;
   display: flex;
   padding-top: 2rem;
+  margin-top: -3rem;
 `;
 const Li = styled.li`
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 1rem;
   padding: 1rem;
-  margin-bottom: 2rem;
-  margin-left: 30%;
+  margin-bottom: 5rem;
+  margin-left: 25%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -62,9 +68,5 @@ const Li = styled.li`
   cursor: pointer;
   :hover {
     color: red;
-  }
-  img {
-    width: 50rem;
-    height: 30rem;
   }
 `;

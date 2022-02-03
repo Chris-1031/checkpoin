@@ -15,12 +15,14 @@ const Rolls = () => {
   return (
     <Marque>
       <Ul>
+      <Link to="/wraith" style={{ textDecoration: "none" }}>
         <Li>
           {rolls.name} <img src={rolls.link} alt="" />
           moteur: {rolls.moteur}
           <br />
           chevaux: {rolls.chevaux}
         </Li>
+        </Link>
       </Ul>
     </Marque>
   );
@@ -30,7 +32,7 @@ export default Rolls;
 
 const Marque = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   font-size: 2rem;
   color: red;
   display: flex;
@@ -62,7 +64,7 @@ const Li = styled.li`
     color: red;
   }
   img {
-    width: 70rem;
-    height: 40rem;
+    width: 50rem;
+    height: 30rem;
   }
 `;
